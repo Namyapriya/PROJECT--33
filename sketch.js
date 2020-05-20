@@ -13,7 +13,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   ground = new Ground(width/2,height,width,20);
-
+ 
 
    for (var k = 0; k <=width; k = k + 80) {
      divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
@@ -55,6 +55,9 @@ function draw() {
   background("black");
   textSize(20)
  //text("Score : "+score,20,30);
+  fill("white");
+  text(mouseX + "," + mouseY, 20, 50);
+  text("10")
   Engine.update(engine);
   ground.display();
   
