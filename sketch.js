@@ -43,14 +43,9 @@ function setup() {
     
        plinkos.push(new Plinko(j,375));
     }
-
-    
-
     
 }
  
-
-
 function draw() {
   background("black");
   textSize(20)
@@ -64,9 +59,10 @@ function draw() {
   text(" 10 ", 250, 550);
   text(" 10 ", 330, 550);
   text(" 50 ", 410, 550);
-   text(" 50 ", 490, 550);
+  text(" 50 ", 490, 550);
   text(" 150 ", 560, 550);
-   text(" 150 ", 640, 550);
+  text(" 150 ", 640, 550);
+  text(" 10 ", 730, 550);
   Engine.update(engine);
   ground.display();
   
@@ -83,6 +79,9 @@ function draw() {
   for (var j = 0; j < particles.length; j++) {
    
      particles[j].display();
+     if(particles[j].body.position.y>780){
+      console.log("working");
+     }
    }
    for (var k = 0; k < divisions.length; k++) {
      
