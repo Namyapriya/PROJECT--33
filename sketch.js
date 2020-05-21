@@ -58,8 +58,15 @@ function draw() {
   fill("white");
   text(mouseX + "," + mouseY, 20, 50);
   textSize(35)
-  text(" 10 ", 10, 750);
-  text(" 100 ", 80, 750);
+  text(" 10 ", 10, 550);
+  text(" 100 ", 80, 550);
+  text(" 100 ", 160, 550);
+  text(" 10 ", 250, 550);
+  text(" 10 ", 330, 550);
+  text(" 50 ", 410, 550);
+   text(" 50 ", 490, 550);
+  text(" 150 ", 560, 550);
+   text(" 150 ", 640, 550);
   Engine.update(engine);
   ground.display();
   
@@ -70,7 +77,7 @@ function draw() {
    }
    if(frameCount%60===0){
      particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
-     score++;
+   
    }
  
   for (var j = 0; j < particles.length; j++) {
