@@ -57,7 +57,9 @@ function draw() {
  //text("Score : "+score,20,30);
   fill("white");
   text(mouseX + "," + mouseY, 20, 50);
-  text("10")
+  textSize(35)
+  text(" 10 ", 10, 750);
+  text(" 100 ", 80, 750);
   Engine.update(engine);
   ground.display();
   
